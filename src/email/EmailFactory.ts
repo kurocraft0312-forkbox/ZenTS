@@ -40,6 +40,8 @@ export class EmailFactory {
         'Trying to send an E-Mail without proper email configuration. Please configure at least a email host',
       )
 
+      // test
+
       return
     } else if (!this.emailTemplates.has(template)) {
       throw new Error(`Email template "${template}" not found!`)
